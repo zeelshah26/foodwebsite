@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* css varibles */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* background-color: aquamarine;
+    border: 2px solid black; */
+    position: relative;
+}
+/* /* logo and image * */
+#logo{
+  margin: 13px 24px;
+}
+#logo img{
+    margin: 5px 5px;
+    border-radius: 50px;
+    height: 72px;
+    width: 100px;
+}
+/* list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(161, 29, 29);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+#navbar ul li{
+    /* padding: 23px 34px; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(252, 252, 252);
+    padding: 23px 34px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: aliceblue;
+    
+}
+/* home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 633px;
+    padding: 3px 200px;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background:url('photo3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    text-align: center;
+    color: rgb(7, 7, 7);
+    /* color: aliceblue; */
+}
+#home p{
+    text-align: center;
+    color: rgb(255, 254, 254);
+    font-size: 1.5rem;
+}
+/* services section */
+.services-container{
+    display: flex;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    /* float: left; */
+}
+#services .box{
+    border: 2px solid black;
+}
+#services .box img{
+        height: 254px;
+        width: 200px;
+        margin: auto;
+        display: block;
+}
+/* utility section */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    color: rgb(5, 5, 5);
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: rgb(5, 5, 5);
+}
+.btn{
+    padding: 5px 34px;
+    margin: 14px;
+    color: white;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
